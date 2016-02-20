@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue.eot');
+    src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HelveticaNeue.woff') format('woff'),
+         url('../fonts/HelveticaNeue.ttf') format('truetype'),
+         url('../fonts/HelveticaNeue.svg#20_dbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-	font-family: Tahoma, Arial, sans-serif;
+	font-family: 'HelveticaNeue', Tahoma, Arial, sans-serif;
 }
 header {
 	background: url(../img/bg-header.jpg) repeat-x 0 0;
@@ -50,4 +61,146 @@ nav ul li a {
 }
 .ola a {
 	text-decoration: underline;
+}
+
+
+.main {
+	position: relative;
+	margin: 0 auto;
+}
+.main img {
+	width: 100%;
+}
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.cadastre {
+	text-align: center;
+	font-size: 24px;
+	color: white;
+	line-height: 62px;
+	background-color: rgba(0, 0, 0, 0.63);
+	margin-bottom: 2px;
+}
+.content {
+	padding: 0 124px;
+	background-color: rgba(0, 0, 0, 0.63);
+}
+.button {
+	padding-top: 36px;
+	display: block;
+	width: 276px;
+	height: 36px;
+	margin: 0 auto;
+}
+.ou {
+	padding: 0 20px;
+	margin: 25px 0 22px 0;
+}
+.ou h1 {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	font-size: 14px;
+	color: #999999;
+}
+.ou h1:before,
+.ou h1:after {
+	content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 1px;
+    vertical-align: middle;
+    background: #666666;
+
+    border-bottom: 1px solid black;
+}
+.ou h1:before {
+	right: 6px;
+    margin: 0 0 0 -50%;
+}
+.ou h1:after {
+	left: 6px;
+    margin: 0 -50% 0 0;
+}
+form {
+	width: 316px;
+}
+form ul li {
+	width: 276px;
+	padding: 8px 20px;
+}
+form ul li input {
+	width: 258px;
+	border: none;
+	border-bottom: 1px solid #484948;
+	line-height: 35px;
+	background: #0f0f0f;
+	color: #cccccc;
+	font-size: 14px;
+	padding-left: 18px;
+	-webkit-box-shadow: inset 6px 6px 8px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:    inset 6px 6px 8px 0px rgba(0, 0, 0, 0.1);
+	box-shadow:         inset 6px 6px 8px 0px rgba(0, 0, 0, 0.1);
+}
+form ul li input:focus {
+	color: white;
+	background-color: #1b5288;
+	outline-style: none;
+	border-bottom: 1px solid #5489be;
+	-webkit-box-shadow: 0px 0px 14px 3px rgba(104, 155, 207, 1);
+	-moz-box-shadow:    0px 0px 14px 3px rgba(104, 155, 207, 1);
+	box-shadow:         0px 0px 14px 3px rgba(104, 155, 207, 1);
+}
+input::-webkit-input-placeholder {color: #ccc;}
+input::-moz-placeholder          {color: #ccc;}/* Firefox 19+ */
+input:-moz-placeholder           {color: #ccc;}/* Firefox 18- */
+input:-ms-input-placeholder      {color: #ccc;}
+input:focus::-webkit-input-placeholder {color: white;}
+input:focus::-moz-placeholder          {color: white;}/* Firefox 19+ */
+input:focus:-moz-placeholder           {color: white;}/* Firefox 18- */
+input:focus:-ms-input-placeholder      {color: white;}
+.checkbox .youbike {
+	margin: 12px 0 0 20px;
+}
+form label {
+	color: #cccccc;
+	font-size: 14px;
+	display: block;
+	margin: -16px 0 0 42px;
+}
+.submit {
+	margin: 0 auto;
+	margin-top: 22px;
+	display: block;
+	font-size: 14px;
+	line-height: 37px;
+	padding: 0 13px;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#50aedb+0,2e7ac4+100 */
+	background: #50aedb; /* Old browsers */
+	background: -webkit-linear-gradient(#50aedb 0%, #2e7ac4 100%);
+	background: -o-linear-gradient(#50aedb 0%, #2e7ac4 100%);
+	background: linear-gradient(#50aedb 0%, #2e7ac4 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50aedb', endColorstr='#2e7ac4',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow: inset 0px 2px 6px 0px rgba(255, 255, 255, 0.5);
+	-moz-box-shadow:    inset 0px 2px 6px 0px rgba(255, 255, 255, 0.5);
+	box-shadow:         inset 0px 2px 6px 0px rgba(255, 255, 255, 0.5);
+}
+.content p {
+	margin-top: 21px;
+	color: #cccccc;
+	font-size: 11px;
+	text-align: center;
+}
+.content p:last-child {
+	margin: 0;
+	margin-top: 6px;
+	padding-bottom: 20px;
 }
